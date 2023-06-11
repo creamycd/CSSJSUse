@@ -1,2 +1,4 @@
 /* CSS Document */
-.html {color: red !important;}
+.topbar {
+ display: none !important;
+}
