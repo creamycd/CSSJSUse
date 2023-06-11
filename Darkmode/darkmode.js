@@ -1,10 +1,11 @@
-export const IS_BROWSER = typeof window !== 'undefined';
+const IS_BROWSER = typeof window !== 'undefined';
 
-export default class Darkmode {
+class Darkmode {
   constructor(options) {
     if (!IS_BROWSER) {
       return;
     }
+
 
     const defaultOptions = {
       bottom: '32px',
