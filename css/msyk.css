@@ -1,4 +1,7 @@
-
+/* Global Font*/
+* {
+    font-family: "Noto Sans SC";
+}
 /* Global Userpage */
 #navbar{
     background: white;
@@ -6,6 +9,8 @@
 }
 a.navbar-brand{
     color: #49B949;
+    font-weight: 600 !important;
+    font-size: 2.21em !important;
 }
 
 a.navbar-brand:hover{
@@ -19,7 +24,7 @@ a.navbar-brand:hover{
     display: none;
 }
 span.menu-text, span.corner-marker-only {
-    display: none !important;;
+    display: none !important;
 }
 
 i.menu-icon {
@@ -27,26 +32,47 @@ i.menu-icon {
     padding: 0;
 }
 
-ul#moduleList{
+#moduleList{
     margin: 0;
     padding: 0;
     background: rgba(0,0,0,0);
     border: none;
-    position: absolute !important;
+    position: fixed !important;
     z-index: 114514;
+    width: 0px;
 }
 
 ul#moduleList:hover{
     background: rgba(0,0,0,0);
     border: none;
+    width: 0px;
 }
 
 #studentPersonal{
-    position: absolute !important;
+    position: fixed !important;
     z-index: 114514 !important;
-    top:-30px;
+    top:0px;
+    right: 20px;
 }
 .menu-icon{
-    position: absolute !important;
+    position: fixed !important;
     z-index: 1919810 !important;
+}
+
+#sidebar {
+    z-index: 114514 !important;
+    background: rgba(0,0,0,0);
+    width: 0px;
+}
+
+.active {
+    border: none;
+}
+
+div.main-content {
+    margin-left: 0 !important;
+}
+
+.tl-item-data, .pull-right {
+    display: none;
 }
