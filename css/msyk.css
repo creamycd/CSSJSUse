@@ -1,4 +1,52 @@
-/* CSS Document */
-.topbar {
- display: none !important;
+
+/* Global Userpage */
+#navbar{
+    background: white;
+    border: grey solid 0.5px;
+}
+a.navbar-brand{
+    color: #49B949;
+}
+
+a.navbar-brand:hover{
+    color: #49B949;
+}
+
+.widget-header{
+    display: none;
+}
+.dropdown-modal, dropdown-toggle, .nav-user-photo, .user-info, .fa-caret-down, .tl_errorq_bg {
+    display: none;
+}
+span.menu-text, span.corner-marker-only {
+    display: none !important;;
+}
+
+i.menu-icon {
+    margin: 0;
+    padding: 0;
+}
+
+ul#moduleList{
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,0);
+    border: none;
+    position: absolute !important;
+    z-index: 114514;
+}
+
+ul#moduleList:hover{
+    background: rgba(0,0,0,0);
+    border: none;
+}
+
+#studentPersonal{
+    position: absolute !important;
+    z-index: 114514 !important;
+    top:-30px;
+}
+.menu-icon{
+    position: absolute !important;
+    z-index: 1919810 !important;
 }
