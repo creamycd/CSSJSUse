@@ -6,6 +6,7 @@
 #navbar{
     background: white;
     border: grey solid 0.5px;
+    position: sticky;
 }
 a.navbar-brand{
     color: #49B949;
@@ -37,7 +38,7 @@ i.menu-icon {
     padding: 0;
     background: rgba(0,0,0,0);
     border: none;
-    position: fixed !important;
+    position: sticky !important;
     z-index: 114514;
     width: 0px;
 }
@@ -55,7 +56,7 @@ ul#moduleList:hover{
     right: 20px;
 }
 .menu-icon{
-    position: fixed !important;
+    position: sticky !important;
     z-index: 1919810 !important;
 }
 
@@ -65,8 +66,9 @@ ul#moduleList:hover{
     width: 0px;
 }
 
-.active {
-    border: none;
+li.active {
+    border: none !important;
+    background: none !important;
 }
 
 div.main-content {
