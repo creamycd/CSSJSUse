@@ -17,7 +17,7 @@ div.topbar, div.bimg, div.introduce-box, div.tl-footer{
 
 /* Global Userpage */
 #navbar{
-    background: white;
+    background: rgba(0,0,0,0);
     border: grey solid 0.5px;
     position: sticky;
 }
