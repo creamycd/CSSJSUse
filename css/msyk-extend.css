@@ -1,3 +1,11 @@
+/* Mainpage */
+
+div.topbar, div.bimg, div.introduce-box, div.tl-footer{
+    display: none;
+}
+
+
+
 /* Global Font*/
 * {
     font-family: "Noto Sans SC";
@@ -38,6 +46,8 @@ i.menu-icon {
     padding: 0;
 }
 
+
+
 #moduleList{
     margin: 0;
     padding: 0;
@@ -68,19 +78,36 @@ ul#moduleList:hover{
 #sidebar {
     z-index: 114514 !important;
     background: rgba(0,0,0,0);
-    width: 0px;
+    width: 0 !important;
 }
 
-li.active {
-    border: none !important;
-    background: none !important;
+.skin-stu .nav-list>li:before {
+    display: none !important;
+}
+
+.skin-stu .nav-list>li.active>a,
+.skin-stu .nav-list>li.active:hover>a,
+.skin-stu .nav-list>li.active>a:focus {
+    color: #48b750;
+    background: rgba(0,0,0,0) !important;
+}
+
+.nav-list>li>a {
+    font-size: 16px;
+    padding: 0;
+}
+
+.skin-stu .nav-list>li>a:hover,
+.skin-stu .nav-list>li>a:focus {
+    color: #48b750;
+    background: rgba(0,0,0,0) !important;
 }
 
 div.main-content {
     margin-left: 0 !important;
 }
 
-.tl-item-data, .pull-right {
+.tl-item-data, button.btn-green-special {
     display: none;
 }
 
