@@ -78,3 +78,9 @@ div.main-content {
 .tl-item-data, .pull-right {
     display: none;
 }
+
+.padding-20 {
+    background: none !important;
+    border: grey solid 1px;
+}
+
