@@ -84,3 +84,9 @@ div.main-content {
     border: grey solid 1px;
 }
 
+div.widget-body.clearfix.mb-30 {
+    background: none;
+}
+div.widget-body.padding-20 {
+    z-index: 1 !important;
+}
