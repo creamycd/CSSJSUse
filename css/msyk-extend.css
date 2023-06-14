@@ -29,16 +29,24 @@ div.topbar, div.bimg, div.introduce-box, div.tl-footer, ul.tl-header-nav, #js-ew
     padding: 0.75em 0 0.75em 0; 
 }
 
-/* Global Font*/
+/* 全局样式（字体+宽度）*/
 * {
-    font-family: "Noto Sans SC";
+    font-family: "Noto Sans SC" !important;
+}
+
+html {
+    min-width: 300px !important;
+}
+
+.col-m-6 {
+    min-width: 30em;
 }
 
 /* Global Userpage */
 #navbar{
-    background: rgba(0,0,0,0);
+    background: white;
     border: grey solid 0.5px;
-    position: sticky;
+    position: fixed;
 }
 a.navbar-brand{
     color: #49B949;
@@ -105,6 +113,11 @@ div.widget-body.clearfix.mb-30 {
     border: grey solid 1px;
 }
 
+.teacher-expediting-tip {
+    border: #FF7400 solid 0.75px;
+    background: none;
+}
+
 div.widget-body.padding-20 {
     z-index: 1 !important;
 }
@@ -144,7 +157,7 @@ div.widget-body.padding-20 {
 }
 
 #studentPersonal{
-    position: fixed !important;
+    position: fixed;
     z-index: 114514 !important;
     top:13px;
     right: 20px;
