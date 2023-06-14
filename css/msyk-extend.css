@@ -1,3 +1,7 @@
+/*Test Function*/
+
+
+
 /* Mainpage */
 
 div.topbar, div.bimg, div.introduce-box, div.tl-footer, ul.tl-header-nav, #js-ewm{
@@ -29,9 +33,13 @@ div.topbar, div.bimg, div.introduce-box, div.tl-footer, ul.tl-header-nav, #js-ew
     padding: 0.75em 0 0.75em 0; 
 }
 
-/* 全局样式（字体+宽度）*/
+/* Global Styles (Font+width)*/
 * {
     font-family: "Noto Sans SC" !important;
+}
+
+div.main-content {
+    margin-left: 0 !important;
 }
 
 html {
@@ -40,77 +48,44 @@ html {
 
 .col-m-6 {
     min-width: 30em;
+    width: auto;
 }
 
 /* Global Userpage */
+/* Navbar */
 #navbar{
     background: white;
     border: grey solid 0.5px;
     position: fixed;
 }
+
 a.navbar-brand{
     color: #49B949;
     font-weight: 600 !important;
     font-size: 2.21em !important;
+    padding-left: 0;
 }
 
 a.navbar-brand:hover{
     color: #49B949;
 }
 
-.widget-header{
-    display: none;
-}
 .dropdown-modal, dropdown-toggle, .nav-user-photo, .user-info, .fa-caret-down, .tl_errorq_bg {
     display: none;
 }
-span.menu-text, span.corner-marker-only {
-    display: none !important;
-}
 
-i.menu-icon {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-#moduleList{
-    margin: 0;
-    padding: 0;
-    background: rgba(0,0,0,0);
-    border: none;
-    position: sticky !important;
-    z-index: 114514;
-    width: 0px;
-}
-
-ul#moduleList:hover{
-    background: rgba(0,0,0,0);
-    border: none;
-    width: 0px;
-}
-
-
-
-
-div.main-content {
-    margin-left: 0 !important;
-}
-
-.tl-item-data, button.btn-green-special {
-    display: none;
-}
-
-div.widget-body.clearfix.mb-30 {
-    background: none;
-}
-
-
-/*作业及课堂列表优化*/
+/* List of Homework&Classes */
 .padding-20 {
     background: none !important;
     border: grey solid 1px;
+}
+
+.tl-item-data, button.btn-green, .icon-question-grey, .btn-orange {
+    display: none;
+}
+
+.widget-main.clearfix>.pull-left {
+ float:right !important
 }
 
 .teacher-expediting-tip {
@@ -122,11 +97,27 @@ div.widget-body.padding-20 {
     z-index: 1 !important;
 }
 
-/*Sidebar优化*/
+.ellipsis {
+    line-height: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+/*Sidebar*/
+
 #sidebar {
     z-index: 114514 !important;
     background: rgba(0,0,0,0);
     width: 0 !important;
+}
+
+span.menu-text, span.corner-marker-only {
+    display: none !important;
+}
+
+i.menu-icon {
+    margin: 0;
+    padding: 0;
 }
 
 .skin-stu .nav-list>li:before {
@@ -151,15 +142,36 @@ div.widget-body.padding-20 {
     background: rgba(0,0,0,0) !important;
 }
 
-.menu-icon{
-    position: sticky !important;
-    z-index: 1919810 !important;
-}
-
-#studentPersonal{
-    position: fixed;
+#studentPersonal, #myHomework, #myWrongQuestion, .fa-icon-news, .fa-icon-xquan, #liveCourse, #courseHistory{
+    position: fixed !important;
     z-index: 114514 !important;
-    top:13px;
-    right: 20px;
+    top:13px !important;
 }
 
+#studentPersonal {
+    right: 240px;
+}
+
+#myHomework {
+    right: 200px;
+}
+
+#myWrongQuestion {
+    right: 160px;
+}
+
+.fa-icon-news {
+    right: 120px;
+}
+
+.fa-icon-xquan {
+    right: 80px;
+}
+
+#liveCourse {
+    right: 40px;
+}
+
+#courseHistory {
+    right: 0px;
+}
