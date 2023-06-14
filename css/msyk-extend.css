@@ -33,6 +33,24 @@ div.topbar, div.bimg, div.introduce-box, div.tl-footer, ul.tl-header-nav, #js-ew
     padding: 0.75em 0 0.75em 0; 
 }
 
+/* Login Page */
+
+.login-container {
+    background: none !important;
+    padding-left: 0;
+}
+
+#footer {
+    display: none;
+}
+
+.header-inner .logo {
+    height: 48px;
+    line-height: 48px;
+    font: 600 32px "Noto Sans SC";
+    color: #fff;
+}
+
 /* Global Styles (Font+width)*/
 * {
     font-family: "Noto Sans SC" !important;
@@ -48,7 +66,9 @@ html {
 
 .col-m-6 {
     min-width: 30em;
-    width: auto;
+}
+.widget-main.clearfix>.pull-right {
+    display: none;
 }
 
 /* Global Userpage */
@@ -85,7 +105,7 @@ a.navbar-brand:hover{
 }
 
 .widget-main.clearfix>.pull-left {
- float:right !important
+    float:right !important
 }
 
 .teacher-expediting-tip {
