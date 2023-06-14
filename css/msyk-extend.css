@@ -83,17 +83,33 @@ ul#moduleList:hover{
     width: 0px;
 }
 
-#studentPersonal{
-    position: fixed !important;
-    z-index: 114514 !important;
-    top:0px;
-    right: 20px;
-}
-.menu-icon{
-    position: sticky !important;
-    z-index: 1919810 !important;
+
+
+
+div.main-content {
+    margin-left: 0 !important;
 }
 
+.tl-item-data, button.btn-green-special {
+    display: none;
+}
+
+div.widget-body.clearfix.mb-30 {
+    background: none;
+}
+
+
+/*作业及课堂列表优化*/
+.padding-20 {
+    background: none !important;
+    border: grey solid 1px;
+}
+
+div.widget-body.padding-20 {
+    z-index: 1 !important;
+}
+
+/*Sidebar优化*/
 #sidebar {
     z-index: 114514 !important;
     background: rgba(0,0,0,0);
@@ -122,22 +138,15 @@ ul#moduleList:hover{
     background: rgba(0,0,0,0) !important;
 }
 
-div.main-content {
-    margin-left: 0 !important;
+.menu-icon{
+    position: sticky !important;
+    z-index: 1919810 !important;
 }
 
-.tl-item-data, button.btn-green-special {
-    display: none;
+#studentPersonal{
+    position: fixed !important;
+    z-index: 114514 !important;
+    top:13px;
+    right: 20px;
 }
 
-.padding-20 {
-    background: none !important;
-    border: grey solid 1px;
-}
-
-div.widget-body.clearfix.mb-30 {
-    background: none;
-}
-div.widget-body.padding-20 {
-    z-index: 1 !important;
-}
