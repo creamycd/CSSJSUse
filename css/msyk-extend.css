@@ -100,7 +100,7 @@ a.navbar-brand:hover{
     border: grey solid 1px;
 }
 
-.tl-item-data, button.btn-green, .icon-question-grey, .btn-orange {
+.tl-item-data, button.btn-green, .icon-question-grey, .widget-body.padding-20>.widget-main.clearfix>.tl-paper-op>.btn-orange {
     display: none;
 }
 
@@ -211,4 +211,18 @@ i.menu-icon {
 /* Notifications */
 .tl-nav-tab-wrap.tl-nav-tabs-fixed.clearfix {
     left: 0;
+}
+
+/* Question Center */
+#learning>#question-plaza>a, #project-learning>a, #project-typicalCase>a {
+    padding-left: 5px
+}
+
+/* History Class */
+#searchArea>a.pull-left.btn.link-btn.col-green {
+    display: none;
+}
+
+h4.cursor_p.clearfix.no-margin-top, div.tl-paper-title.clearfix.no-border-right.no-margin-left, .tl-paper-title.clearfix.no-border-right.no-margin-left>.cursor_p.clearfix.no-margin-top>a.live-tit.ellipsis.pull-left {
+    height: 25px;
 }
