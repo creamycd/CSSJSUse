@@ -75,7 +75,7 @@ html {
 /* Navbar */
 #navbar{
     background: white;
-    border: grey solid 0.5px;
+    border-bottom: grey solid 0.5px;
     position: fixed;
 }
 
@@ -162,7 +162,7 @@ i.menu-icon {
     background: rgba(0,0,0,0) !important;
 }
 
-#studentPersonal, #myHomework, #myWrongQuestion, .fa-icon-news, .fa-icon-xquan, #liveCourse, #courseHistory{
+#studentPersonal, #myHomework, #myWrongQuestion, #myliveCourse, .fa-icon-news, .fa-icon-xquan, #liveCourse, #courseHistory{
     position: fixed !important;
     z-index: 114514 !important;
     top:13px !important;
@@ -180,7 +180,7 @@ i.menu-icon {
     right: 160px;
 }
 
-.fa-icon-news {
+.fa-icon-news, #myInformation {
     right: 120px;
 }
 
@@ -188,10 +188,27 @@ i.menu-icon {
     right: 80px;
 }
 
-#liveCourse {
-    right: 40px;
+#liveCourse, #myliveCourse {
+    right: 40px !important;
 }
 
 #courseHistory {
     right: 0px;
+}
+
+/* Homework page selector*/
+
+.scroll-more {
+    width: 100%;
+    left: 0;
+    padding: 20px 43px
+}
+
+#subject-select {
+    z-index: 114514;
+}
+
+/* Notifications */
+.tl-nav-tab-wrap.tl-nav-tabs-fixed.clearfix {
+    left: 0;
 }
