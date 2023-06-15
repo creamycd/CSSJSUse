@@ -1,7 +1,56 @@
-/*Test Function*/
+// ==UserScript==
+// @name         美师优课优化
+// @namespace    msykyhbyccd
+// @version      1.0
+// @description  美师优课排版美化+黑暗模式+自动跳转www
+// @author       CreamyCandy
+// @homepage  https://github.com/creamycd/WebPlayground/tree/main/msyk
+// @supportURL  mailto:CreamyCandy@frontiers.ac
+// @match        https://*.msyk.cn/*
+// @match        http://msyk.cn/*
+// @match        https://msyk.cn/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=msyk.cn
+// @grant        GM_getResourceText
+// @grant        GM_addStyle
+// @grant        GM_xmlhttpRequest
+// @connect      *
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // 重定向无www至有www
+    if (window.location.href.indexOf("http://msyk.cn") == 0 || window.location.href.indexOf("https://msyk.cn") == 0) {
+        window.location.href = "https://www.msyk.cn" + window.location.pathname + window.location.search;
+    }
 
 
-
+    // Load Darkmode.js from CDN, Darkmode,js is shared under MIT licence. See https://github.com/sandoche/Darkmode.js
+    var dmScript = document.createElement('script');
+    dmScript.src = 'https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js';
+    document.head.appendChild(dmScript);
+    // Wait for the script to load
+    dmScript.onload = function() {
+        // Create a new Darkmode instance with some options
+        var options = {
+            bottom: '32px',
+            right: '32px',
+            mixColor: '#fff',
+            backgroundColor: '#fff',
+            buttonColorDark: '#100f2c',
+            buttonColorLight: '#fff',
+            saveInCookies: true,
+            label: '🌓',
+            autoMatchOsTheme: true
+        };
+        var darkmode = new Darkmode(options);
+        // Show the widget
+        darkmode.showWidget();
+    };
+    // Create a style element
+    var style = document.createElement('style');
+    // Add your custom CSS code here
+    style.textContent = `
 /* Mainpage */
 
 div.topbar, div.bimg, div.introduce-box, div.tl-footer, ul.tl-header-nav, #js-ewm, .header-g-line{
@@ -17,7 +66,7 @@ ul.tl-header-nav.tl-header-nav-login {
     margin: 0;
     border: #00aaff solid 0.1em;
     background: rgba(0,0,0,0);
-    padding: 0.65em 00.5em 0.65em 0.5em; 
+    padding: 0.65em 00.5em 0.65em 0.5em;
 
 }
 ul.tl-header-nav.tl-header-nav-login>li>a {
@@ -37,7 +86,7 @@ ul.tl-header-nav.tl-header-nav-login>li>a {
     width: 5em;
     font-size: 2em;
     height: 2.5em;
-    padding: 0.65em 0.5em 0.65em 0.5em; 
+    padding: 0.65em 0.5em 0.65em 0.5em;
     margin: 0;
     border: #00aaff solid 0.1em;
     background: rgba(0,0,0,0);
@@ -46,7 +95,7 @@ ul.tl-header-nav.tl-header-nav-login>li>a {
 
 .link-login-btn:hover {
     border: none;
-    padding: 0.75em 0 0.75em 0; 
+    padding: 0.75em 0 0.75em 0;
 }
 
 /* Login Page */
@@ -87,6 +136,7 @@ html {
 .widget-main.clearfix>.pull-right {
     display: none;
 }
+
 
 /* Global Userpage */
 /* Navbar */
@@ -243,3 +293,18 @@ i.menu-icon {
 h4.cursor_p.clearfix.no-margin-top, div.tl-paper-title.clearfix.no-border-right.no-margin-left, .tl-paper-title.clearfix.no-border-right.no-margin-left>.cursor_p.clearfix.no-margin-top>a.live-tit.ellipsis.pull-left {
     height: 25px;
 }
+
+    .darkmode-layer, .darkmode-toggle {
+         z-index: 1145141919810;
+    }
+    .darkmode-toggle {
+         width: 40px !important;
+         height: 40px !important;
+         font-size: 20px;
+    }
+
+`;
+    // Append the style element to the document head
+    document.head.appendChild(style);
+
+})();
