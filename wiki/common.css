@@ -1,0 +1,25 @@
+.mw-parser-output > *  {
+    font-family: 'Noto Serif', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, serif !important;
+    line-height: 200%;
+    text-indent: 2em;
+  }
+  .vector-sticky-header-context-bar > *, #firstHeading, .mw-parser-output > h1, .mw-parser-output > h2, .mw-parser-output > h3, .mw-parser-output > h4, .mw-parser-output > h5, .mw-parser-output > h6,
+  .mbox > *, .ombox > *,
+  .mw-parser-output > table > tbody > tr >th, .navbox-title-content > * , .navbox-group{
+    font-family: 'Noto Sans SC', 'Noto Sans', 'Noto Sans CJK', 'Source Han Sans SC', 'Source Han Sans', souece-han-sans-serif, source-han-sans-serif-sc, sans-serif !important;
+    text-indent: 0;
+  }
+  h1, .vector-sticky-header-context-bar {
+    font-weight: 700;
+  }
+  li, td, .mw-pt-languages-label {
+    text-indent: 0;
+  }
+
+  .mw-header, .mw-footer {
+    display: none;
+  }
+  
+  .vector-toc-link {
+    text-decoration: none !important;
+  }
