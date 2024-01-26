@@ -17,7 +17,7 @@
   }
 
   .mw-header, .mw-footer {
-    display: none;
+    display: none !important;
   }
   
   .vector-toc-link {
